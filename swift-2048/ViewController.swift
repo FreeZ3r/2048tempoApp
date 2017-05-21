@@ -42,21 +42,21 @@ class ViewController: UIViewController {
     
 //Easy
   @IBAction func startGameButtonTapped(_ sender : UIButton) {
-    let game = NumberTileGameViewController(dimension: 6, threshold: 8)
+    let game = NumberTileGameViewController(dimension: 6, threshold: 2048)
     self.present(game, animated: true, completion: nil)
     playBackMusic(fileNamed: "back.mp3")
   }
 //Medium
     
 @IBAction func startGameButtonTapped2(_ sender: UIButton) {
-    let game = NumberTileGameViewController(dimension: 5, threshold: 8)
+    let game = NumberTileGameViewController(dimension: 5, threshold: 2048)
     self.present(game, animated: true, completion: nil)
     playBackMusic(fileNamed: "back.mp3")
     }
     
 //Hard
 @IBAction func startGameButtonTapped3(_ sender: UIButton) {
-        let game = NumberTileGameViewController(dimension: 4, threshold: 8)
+        let game = NumberTileGameViewController(dimension: 4, threshold: 2048)
         self.present(game, animated: true, completion: nil)
     playBackMusic(fileNamed: "back.mp3")
     }
@@ -93,7 +93,7 @@ class ViewController: UIViewController {
     
     
     @IBAction func playMusic(sender: UIButton) {
-        playBackMusic(fileNamed: "background.mp3")
+        playBackMusic(fileNamed: "back.mp3")
     }
 
 
